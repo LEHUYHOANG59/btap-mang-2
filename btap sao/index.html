@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dong chu chay</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+    }
+    #target-text {
+      font-size: 2em;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+<!--Khi người dùng gõ bàn phím thì một dòng chữ cố định sẽ lần lượt hiện ra. Cho dù người dùng gõ chữ nào thì cũng lần lượt hiện ra dòng chữ cố định đó.-->
+<h1>Nguoi dep trai nhat the gioi</h1>
+
+<div id="target-text"></div>
+
+<script>
+  const targetText = "Le Huy Hoang";
+  let currentIndex = 0;
+
+  function displayText() {
+    const targetElement = document.getElementById("target-text");
+    targetElement.textContent = targetText.substring(0, currentIndex);
+
+    currentIndex++;
+    if (currentIndex > targetText.length) {
+      currentIndex = 0;
+    }
+
+    setTimeout(displayText, 500); // Adjust delay as needed
+  }
+
+  displayText();
+</script>
+</body>
+</html>
+
