@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tu dien
+  </title>
+</head>
+<body>
+<h1>Tu dien
+</h1>
+
+<form>
+  <label for="word">Nhap tu tieng anh</label>
+  <input type="text" id="word" name="word">
+  <button type="button" onclick="searchWord()">Search</button>
+</form>
+
+<p id="result"></p>
+
+<script>
+  const englishWords = ["hello", "world", "good", "morning", "apple"];
+  const vietnameseWords = ["xin chao", "the gioi", "tot", "buoi sang", "tao"];
+
+  function searchWord() {
+    const word = document.getElementById("word").value.toLowerCase();
+    const resultElement = document.getElementById("result");
+
+    const index = englishWords.indexOf(word);
+
+    if (index !== -1) {
+      resultElement.textContent = `Vietnamese translation: ${vietnameseWords[index]}`;
+    } else {
+      resultElement.textContent = "Word not found.";
+    }
+  }
+</script>
+</body>
+</html>
