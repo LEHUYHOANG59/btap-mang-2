@@ -1,0 +1,152 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h2>Bài 1- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử. Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10. html</h2>-->
+<!--<button onclick="countNumbers()">Đếm số</button>-->
+<!--<p id="result"></p>-->
+
+<!--<script>-->
+<!--  function countNumbers() {-->
+<!--    const numbers = [5, 12, 3, 15, 7, 18, 9, 11, 4, 10];-->
+
+<!--    let count = 0;-->
+
+<!--    for (let i = 0; i < numbers.length; i++) {-->
+<!--      if (numbers[i] >= 10) {-->
+<!--        count++;-->
+<!--      }-->
+<!--    }-->
+
+<!--    document.getElementById("result").textContent = `Có ${count} số lớn hơn hoặc bằng 10 trong mảng.`;-->
+<!--  }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h2>Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau. Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.</h2>-->
+<!--<button onclick="findMax()">Tìm số lớn nhất</button>-->
+<!--<p id="result"></p>-->
+
+<!--<script>-->
+<!--  function findMax() {-->
+<!--    const numbers = [5, 12, 3, 15, 7, 18, 9, 11, 4, 10];-->
+
+<!--    let max = numbers[0];-->
+<!--    let maxIndex = 0;-->
+
+<!--    for (let i = 1; i < numbers.length; i++) {-->
+<!--      if (numbers[i] > max) {-->
+<!--        max = numbers[i];-->
+<!--        maxIndex = i;-->
+<!--      }-->
+<!--    }-->
+
+<!--    document.getElementById("result").textContent = `Số lớn nhất là ${max} tại vị trí ${maxIndex}.`;-->
+<!--  }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h2>Bài 3- Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.</h2>-->
+<!--<button onclick="findMaxAndAverage()">Tính toán</button>-->
+<!--<p id="result"></p>-->
+
+<!--<script>-->
+<!--  function findMaxAndAverage() {-->
+<!--    const numbers = [5, 12, 3, 15, 7, 18, 9, 11, 4, 10];-->
+
+<!--    let max = numbers[0];-->
+<!--    for (let i = 1; i < numbers.length; i++) {-->
+<!--      if (numbers[i] > max) {-->
+<!--        max = numbers[i];-->
+<!--      }-->
+<!--    }-->
+
+<!--    let sum = 0;-->
+<!--    for (let i = 0; i < numbers.length; i++) {-->
+<!--      sum += numbers[i];-->
+<!--    }-->
+
+<!--    const average = sum / numbers.length;-->
+
+<!--    document.getElementById("result").textContent = `Giá trị lớn nhất: ${max}. Giá trị trung bình: ${average}`;-->
+<!--  }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h2>Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.</h2>-->
+<!--<input type="text" id="inputArray" placeholder="Nhập các số nguyên cách nhau bởi dấu phẩy">-->
+<!--<button onclick="reverseArray()">Đảo ngược</button>-->
+<!--<p id="result"></p>-->
+
+<!--<script>-->
+<!--  function reverseArray() {-->
+<!--    const inputString = document.getElementById("inputArray").value;-->
+<!--    const numbers = inputString.split(',').map(Number);-->
+
+<!--    numbers.reverse();-->
+
+<!--    document.getElementById("result").textContent = numbers.join(', ');-->
+<!--  }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h2>Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi-->
+
+<!--</h2>-->
+<!--<input type="text" id="inputString" placeholder="Nhập chuỗi">-->
+<!--<button onclick="countVowels()">Đếm</button>-->
+<!--<p id="result"></p>-->
+
+<!--<script>-->
+<!--  function countVowels() {-->
+<!--    const inputString = document.getElementById("inputString").value.toLowerCase();-->
+<!--    const vowels = "aeiou";-->
+<!--    let count = 0;-->
+
+<!--    for (let i = 0; i < inputString.length; i++) {-->
+<!--      if (vowels.includes(inputString[i])) {-->
+<!--        count++;-->
+<!--      }-->
+<!--    }-->
+
+<!--    document.getElementById("result").textContent = `Số lượng nguyên âm: ${count}`;-->
+<!--  }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
